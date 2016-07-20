@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Уведомления {% endblock %}
+
+{% block body %}
+    <h3><a href="/pattern">Паттерны</a> / <a href="/pattern/abstract_factory">Паттерн - Abstract Factory</a> / Список уведомлений для организации</h3>
+    <ul>
+        <li>
+            E-mail
+            {{ dump(sender1) }}
+        </li>
+        <li>
+            Browser
+            {{ dump(sender2) }}
+        </li>
+        <li>
+            SMS
+            {{ dump(sender3) }}
+        </li>
+    </ul>
+{% endblock %}
