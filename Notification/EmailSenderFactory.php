@@ -6,7 +6,7 @@
  * Time: 13:10
  */
 
-namespace NotificationBundle\Controller;
+namespace NotificationBundle\Notification;
 
 
 class EmailSenderFactory implements AbstractSenderFactory

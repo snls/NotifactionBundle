@@ -6,7 +6,7 @@
  * Time: 13:08
  */
 
-namespace NotificationBundle\Controller;
+namespace NotificationBundle\Notification;
 
 
 class EmailProduct implements AbstractSender

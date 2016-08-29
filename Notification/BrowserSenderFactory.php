@@ -6,7 +6,7 @@
  * Time: 13:12
  */
 
-namespace NotificationBundle\Controller;
+namespace NotificationBundle\Notification;
 
 
 class BrowserSenderFactory implements AbstractSenderFactory

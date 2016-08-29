@@ -6,7 +6,7 @@
  * Time: 13:09
  */
 
-namespace NotificationBundle\Controller;
+namespace NotificationBundle\Notification;
 
 
 interface AbstractSenderFactory

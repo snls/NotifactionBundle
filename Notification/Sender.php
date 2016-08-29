@@ -6,8 +6,10 @@
  * Time: 13:28
  */
 
-namespace NotificationBundle\Controller;
+namespace NotificationBundle\Notification;
 
+
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 abstract class Sender
 {

@@ -2,7 +2,7 @@
 
 namespace NotificationBundle\Controller;
 
-use NotificationBundle\Controller\Notification\Sender;
+use NotificationBundle\Notification\Sender;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
