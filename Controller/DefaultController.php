@@ -2,25 +2,21 @@
 
 namespace NotificationBundle\Controller;
 
-use NotificationBundle\Controller\Notification\BrowserSenderFactory;
-use NotificationBundle\Controller\Notification\EmailSenderFactory;
 use NotificationBundle\Controller\Notification\Sender;
-use NotificationBundle\Controller\Notification\SMSSenderFactory;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/notification")
+     * @Route("/")
      */
     public function indexAction()
     {
-        $email = EmailSenderFactory::class;
         return $this->render('NotificationBundle:Default:index.html.twig', [
-            'sender1' => Sender::send(new $email, "Тестовое сообщение для e-mail", "Тестовый пользователь"),
-            'sender2' => Sender::send(new BrowserSenderFactory(), "Тестовое сообщение для browser", "Тестовый пользователь"),
-            'sender3' => Sender::send(new SMSSenderFactory(), "Тестовое сообщение для sms отправки", "Тестовый пользователь")
+            'sender1' => Sender::getSender('email')->send("Тестовое сообщение для e-mail", "Тестовый пользователь"),
+            'sender2' => Sender::getSender('browser')->send("Тестовое сообщение для browser", "Тестовый пользователь"),
+            'sender3' => Sender::getSender('sms')->send("Тестовое сообщение для sms отправки", "Тестовый пользователь")
         ]);
     }
 }

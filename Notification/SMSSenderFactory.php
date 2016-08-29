@@ -6,7 +6,7 @@
  * Time: 13:12
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 
 class SMSSenderFactory implements AbstractSenderFactory
@@ -18,7 +18,7 @@ class SMSSenderFactory implements AbstractSenderFactory
         $this->sms = new SMSProduct();
     }
 
-    public function sendMessage($message, $user)
+    public function send($message, $user)
     {
         return $this->sms->sendMessage($message, $user);
     }

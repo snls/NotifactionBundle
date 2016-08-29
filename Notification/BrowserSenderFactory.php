@@ -6,7 +6,7 @@
  * Time: 13:12
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 
 class BrowserSenderFactory implements AbstractSenderFactory
@@ -18,7 +18,7 @@ class BrowserSenderFactory implements AbstractSenderFactory
         $this->browser = new BrowserProduct();
     }
 
-    public function sendMessage($message, $user)
+    public function send($message, $user)
     {
         return $this->browser->sendMessage($message, $user);
     }

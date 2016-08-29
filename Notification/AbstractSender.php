@@ -3,13 +3,13 @@
  * Created by PhpStorm.
  * User: lookyalba
  * Date: 18.07.16
- * Time: 13:09
+ * Time: 13:07
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 
-interface AbstractSenderFactory
+interface AbstractSender
 {
     public function sendMessage($message, $user);
 }

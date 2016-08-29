@@ -6,10 +6,10 @@
  * Time: 13:08
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 
-class EmailProduct implements AbstractSender
+class BrowserProduct implements AbstractSender
 {
     use SendMessage;
 }

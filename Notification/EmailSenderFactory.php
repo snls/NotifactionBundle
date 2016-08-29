@@ -6,7 +6,7 @@
  * Time: 13:10
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 
 class EmailSenderFactory implements AbstractSenderFactory
@@ -18,7 +18,7 @@ class EmailSenderFactory implements AbstractSenderFactory
         $this->email = new EmailProduct();
     }
     
-    public function sendMessage($message, $user)
+    public function send($message, $user)
     {
         return $this->email->sendMessage($message, $user);
     }

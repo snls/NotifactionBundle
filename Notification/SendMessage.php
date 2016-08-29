@@ -6,7 +6,7 @@
  * Time: 14:24
  */
 
-namespace NotificationBundle\Controller\Notification;
+namespace NotificationBundle\Controller;
 
 /**
  * Отправка сообщения
